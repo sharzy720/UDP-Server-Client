@@ -1,2 +1,8 @@
-# UDP-Server-Client
-repo of how to create and send different values from a UDP client to a UDP server
+# UDP server and client in java.
+
+---
+
+#### Some variations in java of UDP servers and clients
+
+* To send an [object](https://github.com/sharzy720/UDP-Server-Client/tree/main/message)
+* To send a [message](https://github.com/sharzy720/UDP-Server-Client/tree/main/object)
