@@ -14,7 +14,8 @@ public class Client {
      * @param args (host address) (port number)
      */
     public static void main(String[] args) {
-        int offset = 0;
+        int offset = 0; // Offset for creating a String from the Server's byte array
+        int bufferSize = 256; // Size of the buffers to be used
         try {
             InetAddress host = InetAddress.getByName(args[0]); // Host address to connect to
             int port = Integer.parseInt(args[1]); // Port to use when connecting to the Host
@@ -24,7 +25,7 @@ public class Client {
             // Getting a word to send to the server
             String word = scanner.nextLine();
 
-            byte[] bufferOut = new byte[256];
+            byte[] bufferOut = new byte[bufferSize];
             // Packing the entered word into a byte array to be sent to the server
             bufferOut = word.getBytes();
 
@@ -35,7 +36,7 @@ public class Client {
             // Sending the word to the server
             datagramSocket.send(datagramPacketOut);
 
-            byte[] bufferIn = new byte[256];
+            byte[] bufferIn = new byte[bufferSize];
 
             DatagramPacket datagramPacketIn = new DatagramPacket(bufferIn, bufferIn.length);
             // Receiving a word from the server
