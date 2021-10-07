@@ -3,7 +3,7 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
 /**
- * Creates a Server for Clients to connect to using the Server's address and port
+ * Creates a UDP Server for Clients to connect to using the Server's address and port
  * @version 10-7-2021
  */
 public class Server {

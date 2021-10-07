@@ -5,7 +5,7 @@ import java.net.InetAddress;
 import java.util.Scanner;
 
 /**
- * Creates a Client to communicate to a Server running on a given address and port
+ * Creates a UDP Client to communicate to a Server running on a given address and port
  * @version 10-7-2021
  */
 public class Client {
