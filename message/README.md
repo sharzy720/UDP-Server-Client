@@ -1,8 +1,23 @@
-# UDP server and client in java.
+# TCP server and client in java.
 
+This is a basic version of a TCP server and client that will send a message from the client to
+the server and back.
 ---
 
-#### Some variations in java of UDP servers and clients
+## To Compile
 
-* To send an [object](https://github.com/sharzy720/UDP-Server-Client/tree/main/message)
-* To send a [message](https://github.com/sharzy720/UDP-Server-Client/tree/main/object)
+On the commandline enter
+
+    javac *.java
+
+## To Run
+
+When running the Server should be started before the client run
+
+To run the server:
+
+    java Server
+
+To run the client:
+
+    java Client <host address> <port number>
